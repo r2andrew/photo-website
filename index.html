@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/output.css">
     <meta name="description" content="">
 
     <meta property="og:title" content="">
@@ -13,42 +13,70 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="/dist/img/icon/favicon.ico" sizes="any">
+    <link rel="icon" href="/dist/img/icon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="dist/img/icon/icon.png">
 
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
   </head>
 
-  <body>
+  <body class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 animate-fade-in transition duration-500">
 
-      <div id="title" class="center">
-        <h1>hello world</h1>
-      </div>
-
-      <div class="center">
-        <p>hello world 1</p>
-        <p>&emsp; hello world 2</p>
-        <p>&emsp; hello world 3</p>
-      </div>
-
-      <h1 class="text-3xl font-bold underline">
+      <h1 class="text-3xl font-normal underline">
         Hello world!
       </h1>
 
-      <div class="center" id="margin">
-        <img src="img/DSCF0031.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0051.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0031.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0051.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0031.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0051.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0031.jpg" style="width: 200px" height="auto">
-        <img src="img/DSCF0051.jpg" style="width: 200px" height="auto">
+      <p style="color: white">hello</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+          </div>
+        </div>
       </div>
 
-    <script src="js/app.js"></script>
+    <script src="dist/js/app.js"></script>
 
   </body>
 

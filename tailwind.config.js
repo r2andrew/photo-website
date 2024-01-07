@@ -2,11 +2,11 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Gill Sans MT', 'sans-serif']
+      }
+    }
   },
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {}
-  }
+  plugins: [],
 }
-
