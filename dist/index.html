@@ -5,84 +5,119 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
-    <link rel="stylesheet" href="css/output.css">
     <meta name="description" content="">
 
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <!-- Import Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- Import Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Control how info passed in links -->
     <meta property="og:title" content="">
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
+    <!-- Icon -->
     <link rel="icon" href="/dist/img/icon/favicon.ico" sizes="any">
     <link rel="icon" href="/dist/img/icon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/icon.png">
 
+    <!-- Web Manifest for Mobile -->
     <link rel="manifest" href="../site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#000000">
   </head>
 
-  <!--opacity-0-->
-  <body class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 animate-fade-in transition duration-500">
+  <body class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
 
-  <!-- Header -->
-  <div class="flex justify-center">
-      <h1 class="text-3xl font-normal underline">
-        Hello world!
-      </h1>
-  </div>
+    <!-- Header -->
+    <header class="flex w-full overflow-hidden pt-10 pb-1">
+
+      <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
+
+        <div class="container mx-auto flex flex-wrap items-center md:flex-nowrap">
+
+          <div class="mr-4 md:mr-8">
+            <h1>Andrew Bradley</h1>
+          </div>
+
+          <div class="ml-auto flex items-center justify-center">
+            <button>
 
 
-      <!-- Body -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-20">
-        <div class="grid gap-4 xl:gap-24">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+
+            </button>
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-          </div>
+
+
         </div>
-        <div class="grid gap-4 xl:gap-24">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-          </div>
+      </nav>
+    </header>
+
+
+    <!-- Body -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-20">
+      <div class="grid gap-4 xl:gap-24">
+        <div>
+          <a href="img/DSCF0051.jpg" data-fancybox>
+            <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="img/DSCF0051.jpg" alt="">
+          </a>
         </div>
-        <div class="grid gap-4 xl:gap-24">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
         </div>
-        <div class="grid gap-4 xl:gap-24">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
         </div>
       </div>
+      <div class="grid gap-4 xl:gap-24">
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid gap-4 xl:gap-24">
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid gap-4 xl:gap-24">
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg opacity-0 animate-fade-in transition duration-500" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
 
+
+
     <script src="js/app.js"></script>
+    <!-- Import Fancybox -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind("[data-fancybox]", {});</script>
 
   </body>
 
