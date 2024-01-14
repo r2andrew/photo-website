@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome</title>
+  <meta name="description" content="">
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="css/output.css">
+
+  <!-- Import Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- Import Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Control how info passed in links -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- Icon -->
+  <link rel="icon" href="/dist/img/icon/favicon.ico" sizes="any">
+  <link rel="icon" href="/dist/img/icon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon/icon.png">
+
+  <!-- Web Manifest for Mobile -->
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#000000">
+</head>
+
+<body class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+
+<!-- Header -->
+<header class="flex w-full overflow-hidden pt-10 pb-1">
+
+  <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
+
+    <div class="container mx-auto flex flex-wrap items-center md:flex-nowrap">
+
+      <div class="mr-4 md:mr-8">
+        <h1>Andrew Bradley</h1>
+      </div>
+
+      <!-- Nav links -->
+      <div id="menu"
+           class="w-full h-0 md:w-auto md:flex-grow md:flex md:items-center">
+        <ul id="ulMenu"
+            class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
+          <li class="group transition duration-300">
+            <a href="index.html" class="text-xl tap-highlight-transparent">photos
+              <span class="md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+            </a>
+          </li>
+          <li class="group transition duration-300">
+            <a href="about.html" class="text-xl tap-highlight-transparent">about
+              <span class="md:block h-0.5 bg-black dark:bg-white"></span>
+            </a>
+          </li>
+          <li class="group transition duration-300">
+            <a href="contact.html" class="text-xl tap-highlight-transparent">contact
+              <span class="md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script src="js/app.js"></script>
+<script>Fancybox.bind("[data-fancybox]", {});</script>
+
+</body>
+
+</html>
