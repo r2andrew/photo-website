@@ -665,8 +665,8 @@ video {
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-6 {
@@ -679,10 +679,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
 }
 
 .max-w-0 {
@@ -717,8 +713,20 @@ video {
   flex-wrap: nowrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-14 {
@@ -747,10 +755,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .border-0 {
