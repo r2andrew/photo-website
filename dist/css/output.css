@@ -713,20 +713,12 @@ video {
   flex-wrap: nowrap;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .gap-14 {
@@ -739,6 +731,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -840,6 +836,10 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -893,6 +893,10 @@ video {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:gap-20 {
